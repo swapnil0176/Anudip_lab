@@ -3,12 +3,15 @@ package com.AngularJava;
 import java.util.Scanner;
 
 public class SmallestNo {
-    static int size=6;
-    static int [] arr= new int[size];
+    static int size;
+    static int [] arr;
 
     public static void accept(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter 6 array elements");
+        System.out.print("How many array elements you want: ");
+        size=sc.nextInt();
+        arr=new int[size];
+        System.out.println("Enter "+size+" array elements");
         for (int i=0;i<size;i++){
             arr[i]=sc.nextInt();
         }
