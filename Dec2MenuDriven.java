@@ -47,11 +47,13 @@ public class Dec2MenuDriven {
         }else if(num==2){
             System.out.println(num+" is prime number");
         }
-        boolean f=true;
-        for (int i=2;i<=num/2;i++){
-            if(num%i==0){
-                f=false;
-                break;
+        else{
+            boolean f=true;
+            for (int i=2;i<=num/2;i++){
+                if(num%i==0){
+                    f=false;
+                    break;
+                }
             }
         }
         if(f){
