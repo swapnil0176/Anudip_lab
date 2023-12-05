@@ -2,9 +2,10 @@ package com.AngularJava.DailyPrograms;
 
 public class Staff_bank extends Bank_BOB
 {
-    String mail_id,pan_no;
+    String name,mail_id,pan_no;
     int type_ac,choice;
     int age,phone;
+    long adhar_no;
     public void cus_supp()
     {
         System.out.println("1:For new Ac \n2:Any kind help");
@@ -52,10 +53,11 @@ public class Staff_bank extends Bank_BOB
         age=sc.nextInt();
         System.out.println("Enter Your aadhar No");
         adhar_no=sc.nextLong();
+        accountcreate=false;
 
     }
     public void ac_user_display() {
-        if (name == null || adhar_no == 0) {
+        if (accountcreate) {
             System.out.println("Please create an account...");
         }
         else {
