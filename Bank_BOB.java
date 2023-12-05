@@ -6,13 +6,12 @@ public class Bank_BOB
 {
     int  balance=0;
     int amount;
-    String name;
-    long adhar_no;
+    static boolean accountcreate=true;
     Scanner sc=new Scanner(System.in);
     public void Main_balance()
     {
         System.out.println(name+" "+adhar_no);
-        if(name==null || adhar_no==0){
+        if(accountcreate){
             System.out.println("Please create an account...");
         }
         else{
@@ -22,7 +21,7 @@ public class Bank_BOB
     }
     public void depo_process()
     {
-        if(name==null || adhar_no==0){
+        if(accountcreate){
             System.out.println("Please create an account...");
         }else {
             System.out.println("Enter Your amount");
@@ -37,7 +36,7 @@ public class Bank_BOB
     }
     public void with_process()
     {
-        if(name==null || adhar_no==0){
+        if(accountcreate){
             System.out.println("Please create an account...");
         }else {
             System.out.println("Enter Your amount");
